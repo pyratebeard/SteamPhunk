@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{4422C6BE-E3E7-58CC-D56F-B198DDBB949A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -33,6 +34,10 @@
     <NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net35\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
@@ -45,31 +50,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChaseCamera.cs" />
-     <Compile Include="Assets\CuriosityControl.cs" />
-     <Compile Include="Assets\MapShow.cs" />
-     <Compile Include="Assets\MinimapCameraScript.cs" />
-     <Compile Include="Assets\POI_marker.cs" />
-     <Compile Include="Assets\PointUtility.cs" />
-     <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\IntArrayComparer.cs" />
-     <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\TerrainNeighbours.cs" />
-     <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\TerrainStitchEditor.cs" />
-     <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\Third Party\Complex.cs" />
-     <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\Third Party\Matrix.cs" />
-     <Compile Include="Assets\TerrainLoader.cs" />
-     <Compile Include="Assets\TerrainTextures.cs" />
-     <Compile Include="Assets\TerrainTools.cs" />
-     <Compile Include="Assets\UIMap.cs" />
-     <Compile Include="Assets\poi_collector.cs" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="XInputDotNetPure">
- <HintPath>C:/Users/mburrows3/Documents/GitHub/SteamPhunk/Assets/Plugins/x86_64/XInputDotNetPure.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\ChaseCamera.cs" />
+    <Compile Include="Assets\CuriosityControl.cs" />
+    <Compile Include="Assets\MapShow.cs" />
+    <Compile Include="Assets\MinimapCameraScript.cs" />
+    <Compile Include="Assets\POILoader.cs" />
+    <Compile Include="Assets\POI_marker.cs" />
+    <Compile Include="Assets\PointUtility.cs" />
+    <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\IntArrayComparer.cs" />
+    <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\TerrainNeighbours.cs" />
+    <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\TerrainStitchEditor.cs" />
+    <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\Third Party\Complex.cs" />
+    <Compile Include="Assets\Terrain Stitch\Terrain Stitch Scripts\Third Party\Matrix.cs" />
+    <Compile Include="Assets\TerrainLoader.cs" />
+    <Compile Include="Assets\TerrainTextures.cs" />
+    <Compile Include="Assets\TerrainTools.cs" />
+    <Compile Include="Assets\UIMap.cs" />
+    <Compile Include="Assets\poi_collector.cs" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="XInputDotNetPure">
+      <HintPath>C:/Users/mburrows3/Documents/GitHub/SteamPhunk/Assets/Plugins/x86_64/XInputDotNetPure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -79,5 +88,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

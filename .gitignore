@@ -3,5 +3,5 @@ Library/*
 Library/UnityAssemblies/
 Assets/Library/metadata/
 *.meta
-.vs/
+.vs/*
 obj/
