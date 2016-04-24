@@ -3,5 +3,9 @@ Library/*
 Library/UnityAssemblies/
 Assets/Library/metadata/
 *.meta
+<<<<<<< HEAD
 .vs/
+=======
+.vs/*
+>>>>>>> develop
 obj/
